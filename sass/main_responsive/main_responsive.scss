@@ -1,0 +1,477 @@
+@import "../mixin";
+@import "../var";
+
+@media (max-width: 325px) {
+  .home-wrapper {
+    height: 90vh;
+  }
+  .h-content {
+    p {
+      font-size: 3.2rem;
+      padding: 1rem;
+    }
+  }
+}
+@media (min-width: 425px) {
+  .h-content {
+    display: grid;
+    justify-content: start;
+    p {
+      font-size: 3.8rem;
+      width: 32.2rem;
+    }
+  }
+}
+
+@media (min-width: 567px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .hide {
+    display: block !important;
+  }
+
+  .home-wrapper {
+    background: url("../../images/desktop/image-hero.jpg") no-repeat center
+      center/cover;
+    height: 80vh;
+  }
+  .h-container {
+    max-width: 540px;
+  }
+
+  // this is the navigation menu
+  .navbar {
+    padding-top: 2rem;
+    .nav-menu {
+      display: none;
+    }
+  }
+  #n-links {
+    position: static;
+    width: fit-content;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0);
+
+    ul {
+      display: flex;
+      gap: 1.6rem;
+      padding: 0;
+      li {
+        font-size: 1.2rem;
+        line-height: 0;
+        text-transform: capitalize;
+        padding: 1.6rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        display: inline-block;
+
+        &:hover {
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+
+  // #n-links {
+  //   display: block !important;
+  //   background-color: red;
+  // }
+  .h-content {
+    width: 40rem;
+    margin-top: 4rem;
+    @include flexProp(flex-start, center);
+  }
+
+  // this is the section area css
+
+  .s-one {
+    min-height: 80vh;
+  }
+  .s-container {
+    & > div {
+      flex-direction: row;
+      gap: 0;
+      position: relative;
+    }
+  }
+
+  .left-div {
+    width: 70%;
+  }
+  .right-div {
+    position: absolute;
+    top: 10rem;
+    right: 0rem;
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    padding: 4rem 0 0rem 4rem;
+
+    .s-content {
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      .heading {
+        @include headings(2.4rem);
+      }
+      p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        color: $veryDarkGray;
+        margin-top: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  // this is the creation section
+
+  .creation-container {
+    margin: auto;
+    margin-bottom: 10rem;
+    flex-direction: row;
+    gap: 0;
+  }
+  .c-heading {
+    width: 50%;
+    @include flexProp(flex-start, center);
+  }
+  .btn {
+    width: 50%;
+    order: 2;
+    @include flexProp(flex-end, center);
+    button {
+      padding: 0.7rem 2rem;
+      font-weight: 700;
+      margin-top: 0rem;
+      margin-right: 2rem;
+      &:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.2s ease-out 0.1s;
+      }
+    }
+  }
+
+  .list {
+    width: 100%;
+    order: 3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+  }
+  .card {
+    width: 23%;
+    height: 25rem;
+    margin-top: 2%;
+  }
+  .card-container {
+    div {
+      margin: 0 0 1.2rem 1.2rem;
+      h4 {
+        font-size: 2rem;
+      }
+    }
+  }
+  // card background images
+  #one {
+    background: red url("../../images/desktop/image-deep-earth.jpg") no-repeat
+      center center/cover;
+  }
+  #two {
+    background: url("../../images/desktop/image-night-arcade.jpg") no-repeat
+      center center/cover;
+  }
+  #three {
+    background: url("../../images/desktop/image-soccer-team.jpg") no-repeat
+      center center/cover;
+  }
+  #four {
+    background: url("../../images/desktop/image-grid.jpg") no-repeat center
+      center/cover;
+  }
+  #five {
+    background: url("../../images/desktop/image-from-above.jpg") no-repeat
+      center center/cover;
+  }
+  #six {
+    background: url("../../images/desktop/image-pocket-borealis.jpg") no-repeat
+      center center/cover;
+  }
+  #seven {
+    background: url("../../images/desktop/image-curiosity.jpg") no-repeat center
+      center/cover;
+  }
+  #eight {
+    background: url("../../images/desktop/image-fisheye.jpg") no-repeat center
+      center/cover;
+  }
+
+  // this is the footer section
+
+  .f-container {
+    @include flexProp(space-between, center);
+    flex-direction: row;
+    padding: 3rem 0;
+  }
+  .f-left {
+    @include flexProp(center, flex-start);
+    gap: 0.4rem;
+
+    img {
+      height: 5.7rem;
+      padding: 1.6rem 0;
+    }
+    ul {
+      flex-direction: row;
+      gap: 1rem;
+      font-size: 1.2rem;
+
+      li {
+        padding: 1.6rem 0;
+      }
+    }
+  }
+  .f-right {
+    @include flexProp(center, flex-end);
+    gap: 0.4rem;
+  }
+}
+
+// this is for tablets
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .navbar {
+    .n-logo {
+      img {
+        width: 15rem;
+      }
+    }
+  }
+  // section area css
+
+  .s-one {
+    min-height: fit-content;
+    padding: 8rem 0;
+  }
+
+  .right-div {
+    top: 13rem;
+    width: 46%;
+    height: 71%;
+    padding: 5rem 1rem 0 5rem;
+    .s-content {
+      gap: 2rem;
+      .heading {
+        @include headings(3rem);
+      }
+      p {
+        font-size: 1.1rem;
+        word-spacing: -1px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  // this is the creation section
+
+  .list {
+    gap: 2.5%;
+  }
+  .card {
+    width: 22.5%;
+    height: 30rem;
+  }
+  .card-container {
+    div {
+      margin: 0 0 2rem 2rem;
+    }
+  }
+}
+
+// large devices
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 0 5rem;
+  }
+
+  // section area css
+
+  .s-one {
+    min-height: fit-content;
+    padding: 10rem 0;
+  }
+  .s-container {
+    & > div {
+      width: 920px;
+    }
+  }
+  // .left-div {
+  //   width: 70%;
+  // }
+  .right-div {
+    top: 18rem;
+    padding: 7rem 5rem 0 4rem;
+    .s-content {
+      gap: 3rem;
+      p {
+        font-size: 1.2rem;
+        line-height: 18px;
+      }
+    }
+  }
+  .left-div {
+    .s-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .card {
+    height: 37rem;
+  }
+
+  .f-container {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+// this is for extra large
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  #n-links {
+    ul {
+      gap: 2.2rem;
+      li {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  // section area css
+
+  .s-one {
+    padding: 12rem 0;
+  }
+  .s-container {
+    & > div {
+      width: 1140px;
+    }
+  }
+  .right-div {
+    top: 22rem;
+    right: 5rem;
+    padding: 7rem 3rem 0 7rem;
+    .s-content {
+      gap: 3rem;
+      .heading {
+        @include headings(3.6rem);
+      }
+      p {
+        font-size: 1.5rem;
+        word-spacing: -1px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .left-div {
+    width: 100%;
+    .s-img {
+      width: 100%;
+      img {
+        width: 731px;
+      }
+    }
+  }
+
+  .card {
+    height: 45rem;
+  }
+  .card-container {
+    div {
+      h4 {
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .f-left {
+    ul {
+      font-size: 1.5rem;
+    }
+  }
+  .copyright {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// laptop devices
+
+@media (min-width: 1400px) {
+  // common classes
+  .container {
+    max-width: 1320px;
+    padding: 0rem 7rem;
+  }
+
+  .navbar {
+    .n-logo {
+      img {
+        width: 16rem;
+      }
+    }
+  }
+  #n-links {
+    ul {
+      gap: 2.5rem;
+    }
+  }
+  .s-container {
+    & > div {
+      max-width: 1340px;
+    }
+  }
+  .right-div {
+    right: 2rem;
+    padding: 7rem 3rem 0 6rem;
+  }
+
+  .c-heading {
+    h1 {
+      @include headings(4rem);
+    }
+  }
+  .btn {
+    button {
+      font-size: 1.4rem;
+      padding: 1rem 3rem;
+    }
+  }
+
+  .list {
+    .card {
+      height: 52rem;
+    }
+  }
+
+  .f-container {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}

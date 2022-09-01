@@ -1,0 +1,391 @@
+@media (max-width: 325px) {
+  .home-wrapper {
+    height: 90vh;
+  }
+  .h-content p {
+    font-size: 3.2rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 425px) {
+  .h-content {
+    display: grid;
+    justify-content: start;
+  }
+  .h-content p {
+    font-size: 3.8rem;
+    width: 32.2rem;
+  }
+}
+@media (min-width: 567px) {
+  .container {
+    max-width: 540px;
+  }
+  .hide {
+    display: block !important;
+  }
+  .home-wrapper {
+    background: url("../../images/desktop/image-hero.jpg") no-repeat center center/cover;
+    height: 80vh;
+  }
+  .h-container {
+    max-width: 540px;
+  }
+  .navbar {
+    padding-top: 2rem;
+  }
+  .navbar .nav-menu {
+    display: none;
+  }
+  #n-links {
+    position: static;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  #n-links ul {
+    display: flex;
+    gap: 1.6rem;
+    padding: 0;
+  }
+  #n-links ul li {
+    font-size: 1.2rem;
+    line-height: 0;
+    text-transform: capitalize;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    display: inline-block;
+  }
+  #n-links ul li:hover {
+    border-bottom: 1px solid white;
+  }
+  .h-content {
+    width: 40rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .s-one {
+    min-height: 80vh;
+  }
+  .s-container > div {
+    flex-direction: row;
+    gap: 0;
+    position: relative;
+  }
+  .left-div {
+    width: 70%;
+  }
+  .right-div {
+    position: absolute;
+    top: 10rem;
+    right: 0rem;
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    padding: 4rem 0 0rem 4rem;
+  }
+  .right-div .s-content {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .right-div .s-content .heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0rem;
+  }
+  .right-div .s-content p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    color: hsl(0deg, 0%, 41%);
+    margin-top: 0;
+    padding: 0;
+  }
+  .creation-container {
+    margin: auto;
+    margin-bottom: 10rem;
+    flex-direction: row;
+    gap: 0;
+  }
+  .c-heading {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .btn {
+    width: 50%;
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .btn button {
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    margin-top: 0rem;
+    margin-right: 2rem;
+  }
+  .btn button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out 0.1s;
+  }
+  .list {
+    width: 100%;
+    order: 3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+  }
+  .card {
+    width: 23%;
+    height: 25rem;
+    margin-top: 2%;
+  }
+  .card-container div {
+    margin: 0 0 1.2rem 1.2rem;
+  }
+  .card-container div h4 {
+    font-size: 2rem;
+  }
+  #one {
+    background: red url("../../images/desktop/image-deep-earth.jpg") no-repeat center center/cover;
+  }
+  #two {
+    background: url("../../images/desktop/image-night-arcade.jpg") no-repeat center center/cover;
+  }
+  #three {
+    background: url("../../images/desktop/image-soccer-team.jpg") no-repeat center center/cover;
+  }
+  #four {
+    background: url("../../images/desktop/image-grid.jpg") no-repeat center center/cover;
+  }
+  #five {
+    background: url("../../images/desktop/image-from-above.jpg") no-repeat center center/cover;
+  }
+  #six {
+    background: url("../../images/desktop/image-pocket-borealis.jpg") no-repeat center center/cover;
+  }
+  #seven {
+    background: url("../../images/desktop/image-curiosity.jpg") no-repeat center center/cover;
+  }
+  #eight {
+    background: url("../../images/desktop/image-fisheye.jpg") no-repeat center center/cover;
+  }
+  .f-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 3rem 0;
+  }
+  .f-left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  .f-left img {
+    height: 5.7rem;
+    padding: 1.6rem 0;
+  }
+  .f-left ul {
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+  .f-left ul li {
+    padding: 1.6rem 0;
+  }
+  .f-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .navbar .n-logo img {
+    width: 15rem;
+  }
+  .s-one {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding: 8rem 0;
+  }
+  .right-div {
+    top: 13rem;
+    width: 46%;
+    height: 71%;
+    padding: 5rem 1rem 0 5rem;
+  }
+  .right-div .s-content {
+    gap: 2rem;
+  }
+  .right-div .s-content .heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0rem;
+  }
+  .right-div .s-content p {
+    font-size: 1.1rem;
+    word-spacing: -1px;
+    line-height: 14px;
+  }
+  .list {
+    gap: 2.5%;
+  }
+  .card {
+    width: 22.5%;
+    height: 30rem;
+  }
+  .card-container div {
+    margin: 0 0 2rem 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 0 5rem;
+  }
+  .s-one {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding: 10rem 0;
+  }
+  .s-container > div {
+    width: 920px;
+  }
+  .right-div {
+    top: 18rem;
+    padding: 7rem 5rem 0 4rem;
+  }
+  .right-div .s-content {
+    gap: 3rem;
+  }
+  .right-div .s-content p {
+    font-size: 1.2rem;
+    line-height: 18px;
+  }
+  .left-div .s-img img {
+    width: 100%;
+  }
+  .card {
+    height: 37rem;
+  }
+  .f-container {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  #n-links ul {
+    gap: 2.2rem;
+  }
+  #n-links ul li {
+    font-size: 1.5rem;
+  }
+  .s-one {
+    padding: 12rem 0;
+  }
+  .s-container > div {
+    width: 1140px;
+  }
+  .right-div {
+    top: 22rem;
+    right: 5rem;
+    padding: 7rem 3rem 0 7rem;
+  }
+  .right-div .s-content {
+    gap: 3rem;
+  }
+  .right-div .s-content .heading {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0rem;
+  }
+  .right-div .s-content p {
+    font-size: 1.5rem;
+    word-spacing: -1px;
+    line-height: 22px;
+  }
+  .left-div {
+    width: 100%;
+  }
+  .left-div .s-img {
+    width: 100%;
+  }
+  .left-div .s-img img {
+    width: 731px;
+  }
+  .card {
+    height: 45rem;
+  }
+  .card-container div h4 {
+    font-size: 2.4rem;
+  }
+  .f-left ul {
+    font-size: 1.5rem;
+  }
+  .copyright p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+    padding: 0rem 7rem;
+  }
+  .navbar .n-logo img {
+    width: 16rem;
+  }
+  #n-links ul {
+    gap: 2.5rem;
+  }
+  .s-container > div {
+    max-width: 1340px;
+  }
+  .right-div {
+    right: 2rem;
+    padding: 7rem 3rem 0 6rem;
+  }
+  .c-heading h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0rem;
+  }
+  .btn button {
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+  }
+  .list .card {
+    height: 52rem;
+  }
+  .f-container {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}/*# sourceMappingURL=main_responsive.css.map */
